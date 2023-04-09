@@ -1,0 +1,11 @@
+﻿[
+    {
+        "Text": "Button 1",
+        "Id": 1
+    },
+    {
+        "Text": "Button 2",
+        "Id": 2
+    }
+    // Add more button configurations as needed
+]
