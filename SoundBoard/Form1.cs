@@ -14,14 +14,17 @@ namespace SoundBoard
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // Get the path of the executable and the config file.
             string exePath = AppDomain.CurrentDomain.BaseDirectory;
             string configFile = Path.Combine(exePath, "buttonsConfig.json");
 
+            // If the config file exists, read the button configurations.
             if (File.Exists(configFile))
             {
                 string json = File.ReadAllText(configFile);
                 List<ButtonConfig> buttonConfigs = JsonConvert.DeserializeObject<List<ButtonConfig>>(json);
 
+                // Create and configure buttons for each button configuration.
                 foreach (ButtonConfig buttonConfig in buttonConfigs)
                 {
                     Button button = new Button
@@ -53,6 +56,7 @@ namespace SoundBoard
                         }
                     }
 
+                    // Add click event handler to play sound and execute desired behavior.
                     button.Click += (sender, e) => {
                         // Play sound
                         string soundPath = Path.Combine(exePath, "sounds", buttonConfig.SoundFile);
@@ -62,6 +66,7 @@ namespace SoundBoard
                         //MessageBox.Show($"You clicked {button.Text}");
                     };
 
+                    // Add the button to the form's FlowLayoutPanel.
                     flowLayoutPanel1.Controls.Add(button);
                 }
             }
@@ -71,6 +76,7 @@ namespace SoundBoard
             }
         }
 
+        // Asynchronously plays a sound given a file path.
         private async Task PlaySoundAsync(string soundPath)
         {
             if (File.Exists(soundPath))
@@ -88,3 +94,4 @@ namespace SoundBoard
         }
     }
 }
+
