@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace SoundBoard
 {
-    public class ButtonConfig
-    {
+    public class ButtonConfig 
+    { 
         public string Text { get; set; }
         public int Id { get; set; }
+        public string ImageFile { get; set; }
+        public string SoundFile { get; set; }
     }
-
 }

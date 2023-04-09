@@ -1,11 +1,68 @@
 ﻿[
-    {
-        "Text": "Button 1",
-        "Id": 1
-    },
-    {
-        "Text": "Button 2",
-        "Id": 2
-    }
-    // Add more button configurations as needed
+  {
+    "Text": "Bruh",
+    "Id": 1,
+    "ImageFile": "bruh.png",
+    "SoundFile": "bruh.wav"
+  },
+  {
+    "Text": "Bruh 2",
+    "Id": 2,
+    "ImageFile": "bruh2.png",
+    "SoundFile": "bruh2.wav"
+  },
+  {
+    "Text": "How x3",
+    "Id": 3,
+    "ImageFile": "how x3.png",
+    "SoundFile": "how x3.wav"
+  },
+  {
+    "Text": "How",
+    "Id": 4,
+    "ImageFile": "how.png",
+    "SoundFile": "how.wav"
+  },
+  {
+    "Text": "How 2",
+    "Id": 5,
+    "ImageFile": "how2.png",
+    "SoundFile": "how2.wav"
+  },
+  {
+    "Text": "I don't get it",
+    "Id": 6,
+    "ImageFile": "i don't get it.png",
+    "SoundFile": "i don't get it.wav"
+  },
+  {
+    "Text": "I don't understand",
+    "Id": 7,
+    "ImageFile": "I don't understand.png",
+    "SoundFile": "I don't understand.wav"
+  },
+  {
+    "Text": "It's impossible",
+    "Id": 8,
+    "ImageFile": "its impossible.png",
+    "SoundFile": "its impossible.wav"
+  },
+  {
+    "Text": "What was that",
+    "Id": 10,
+    "ImageFile": "what was that.png",
+    "SoundFile": "what was that.wav"
+  },
+  {
+    "Text": "Why",
+    "Id": 11,
+    "ImageFile": "why.png",
+    "SoundFile": "why.wav"
+  },
+  {
+    "Text": "Yolo it",
+    "Id": 12,
+    "ImageFile": "yolo it.png",
+    "SoundFile": "yolo it.wav"
+  }
 ]
